@@ -1,1 +1,241 @@
- 
+
+
+.custom-navbar{
+    width: 100%;
+    height: 130vh;
+    background-color: $body_color;
+    overflow: hidden;
+    .home-section{
+            position: relative;
+            padding: 100px;
+        .home-title{
+            width: 400px;
+            h2{
+                font-size: 40px;
+                color: #000;
+                font-weight:700;
+            }
+            
+        }
+        .home-content p{
+            width: 300px;
+            font-size: 14px;
+            color: #000;
+        }
+        .liner-image{
+            width: 100%;
+            height: 100%;
+            top: 100px;
+            right: 100px;
+            transform: rotate(-10deg);
+            position: absolute;
+
+            z-index: 10;
+        }
+        .home-section-image img{
+            top: 150px;
+            right: 20%;
+            position: absolute;
+            width: 600px;
+            border-radius: 18px;
+            z-index: 11;
+            
+        }
+        .time-sticker img{
+            width: 280px;
+            height: 280px;
+            position: absolute;
+            top: 400px;
+            right: 300px;
+            z-index: 12;
+        }
+        
+        
+    }
+}
+
+.services{
+    height: 80vh;
+    .services-content{
+        .services-content-title1{
+            color: #FD346E;
+            font-size: 20;
+            font-family: "Quicksand",sans-serif;
+            font-weight: bold;
+        }
+        .services-content-title2{
+            width: 500px;
+            h2{
+                color: #030314;
+                font-size: 50px;
+                font-weight: 800;
+            }
+            
+        }
+        .services-content-text{
+            margin-bottom: 20px;
+            width: 450px;
+            font-family: "Quicksand",sans-serif;
+            color: #5e6269;
+            font-size: 14px;
+        }
+    }
+
+    .services-right-elemnts{
+        .services-right-elemnt{
+            margin: 4px;
+            border-radius: 20px;
+            
+            width: 270px;
+            height: 220px;
+            background-color: white;
+            .services-circle1{
+                margin: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 60px;
+                height: 60px;
+                left: 1055px;
+                top: 1252.5px;
+                border-radius: 50%;
+                background: #FD346E;
+                box-shadow: -5px 15px 30px rgba(253, 52, 110, 0.301961);
+                svg{
+                    width: 26px;
+                    height: 30px;
+                    path{
+                      fill:#ffffff;
+                    }
+                  }
+            }
+            .services-circle2{
+                margin: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 60px;
+                height: 60px;
+                left: 1055px;
+                top: 1252.5px;
+                border-radius: 50%;
+                background: #1DE2CF;
+                box-shadow: -5px 15px 30px rgba(29, 226, 207, 0.301961);
+                svg{
+                    width: 26px;
+                    height: 30px;
+                    path{
+                      fill:#ffffff;
+                    }
+                  }
+            }
+            .services-circle3{
+                margin: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 60px;
+                height: 60px;
+                left: 1055px;
+                top: 1252.5px;
+                border-radius: 50%;
+                background: #6001D3;
+                box-shadow: -5px 15px 30px rgba(173, 52, 253, 0.302);
+                svg{
+                    width: 26px;
+                    height: 30px;
+                    path{
+                      fill:#ffffff;
+                    }
+                  }
+            }
+            .services-circle4{
+                margin: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 60px;
+                height: 60px;
+                left: 1055px;
+                top: 1252.5px;
+                border-radius: 50%;
+                background: #FCDC00;
+                box-shadow: -5px 15px 30px rgba(252, 220, 0, 0.301961);
+                svg{
+                    width: 26px;
+                    height: 30px;
+                    path{
+                      fill:#ffffff;
+                    }
+                  }
+            }
+            .services-elemnt-title h2{
+                width: 40px;
+                margin: 12px 24px;
+                color: #081420;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .services-elemnt-far h3{
+                margin: 12px 24px;
+                color: #70798B;
+                font-size: 15px;
+                font-weight: 500;
+            }
+            &:hover{
+                margin: 4px;
+                border-radius: 20px;
+                
+                width: 270px;
+                height: 220px;
+                background-color: #6001D3;
+                box-shadow: -10px 40px 70px rgba(96, 1, 211, 0.301961);
+                transition: 0.9s ease;
+                .services-circle1,
+                .services-circle2,
+                .services-circle3,
+                .services-circle4{
+                    margin: 24px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 60px;
+                    height: 60px;
+                    left: 1055px;
+                    top: 1252.5px;
+                    border-radius: 50%;
+                    background: #ffffff;
+                    // box-shadow: -5px 15px 30px rgba(253, 52, 110, 0.301961);
+                    svg{
+                      width: 26px;
+                      height: 30px;
+                      background: #fff;
+                      path{
+                        fill:#6001D3
+                      }
+                    }
+                }
+                .services-elemnt-title h2{
+                    width: 40px;
+                    margin: 12px 24px;
+                    color: #ffffff;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                .services-elemnt-far h3{
+                    margin: 12px 24px;
+                    color: #a6acb8;
+                    font-size: 15px;
+                    font-weight: 500; 
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
