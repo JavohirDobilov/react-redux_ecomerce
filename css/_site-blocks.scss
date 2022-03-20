@@ -7,7 +7,7 @@
     overflow: hidden;
     .home-section{
             position: relative;
-            padding: 100px;
+            padding: 250px 0;
         .home-title{
             width: 400px;
             h2{
@@ -17,7 +17,7 @@
             }
             
         }
-        .home-content p{
+        .home-content p{ 
             width: 300px;
             font-size: 14px;
             color: #000;
@@ -25,7 +25,7 @@
         .liner-image{
             width: 100%;
             height: 100%;
-            top: 100px;
+            top: 250px;
             right: 100px;
             transform: rotate(-10deg);
             position: absolute;
@@ -33,7 +33,7 @@
             z-index: 10;
         }
         .home-section-image img{
-            top: 150px;
+            top: 250px;
             right: 20%;
             position: absolute;
             width: 600px;
@@ -45,7 +45,7 @@
             width: 280px;
             height: 280px;
             position: absolute;
-            top: 400px;
+            top: 500px;
             right: 300px;
             z-index: 12;
         }
@@ -95,6 +95,7 @@
             height: 220px;
             background-color: white;
             .services-circle1{
+                cursor: pointer;
                 margin: 24px;
                 display: flex;
                 justify-content: center;
@@ -115,6 +116,7 @@
                   }
             }
             .services-circle2{
+                cursor: pointer;
                 margin: 24px;
                 display: flex;
                 justify-content: center;
@@ -135,6 +137,7 @@
                   }
             }
             .services-circle3{
+                cursor: pointer;
                 margin: 24px;
                 display: flex;
                 justify-content: center;
@@ -155,6 +158,7 @@
                   }
             }
             .services-circle4{
+                cursor: pointer;
                 margin: 24px;
                 display: flex;
                 justify-content: center;
@@ -335,32 +339,198 @@
     height: 120vh;
      overflow: hidden;
      background-color: #081420;
+     display: flex;
+     justify-content: center;
     .pricing-title1{
+        padding: 20px;
         color: #FD346E;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: bold;
         text-align: center;
         font-family: "Quicksand",sans-serif;
     }
     .pricing-title2{
+        padding: 20px;
         text-align: center;
         font-size: 44px;
         font-weight: bold;
         color: white;
     }
     .month-year{
+        
         display: flex;
         justify-content: center;
         align-items: center;
         .month-switch{
+            
             display: flex;
             justify-content: center;
             align-items: center;
         }
         .year-switch{
+           
             display: flex;
             justify-content: center;
             align-items: center;
         }
+    }
+
+    .pricing-card{
+        overflow: hidden;
+        background-color: #192431;
+        width: 360px;
+        height: 500px;
+        border-radius: 20px;
+        cursor: pointer;
+        .pricing-part-bac{
+            width: 100%;
+            height: 50%;
+            padding: 20px 60px;
+            transition:all 0.7s ease;
+            background-color: #7401d3;
+            
+            
+            .pricing-card-title{
+                padding: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 30px;
+                font-weight: bold;
+                color: white;
+                font-family: $font-family2;
+            }
+            .pricing-card-title2{
+                padding: 15px;
+                font-size: 16px;
+                font-family: $font-family2;
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+                color: #FD346E;
+            }
+            .pricing-line{
+                
+                width:100%;
+                height: 1px;
+                border-radius: 10px;
+                background-color: white;
+            }
+            .pricing-card-date{
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                position: relative;
+                color:white;
+                font-size: 80px;
+                font-weight: bold;
+                font-family: $font-family2;
+                .position-sum{
+                    position: absolute;
+                    top: 28px;
+                    left: 66px;
+                    font-size: 14px;
+                    color: white;
+                    font-family: $font-family2;
+                }
+                .position-date{
+                    position: absolute;
+                    bottom: 26px;
+                    right: 24px;
+                    font-size: 14px;
+                    color: white;
+                    font-family: $font-family2;
+                }
+            }
+            &:hover{
+                width: 100%;
+                height: 50%;
+                padding: 20px 60px;
+                background-color: #FD346E;
+                
+                .pricing-card-title{
+                    padding: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 30px;
+                    font-weight: bold;
+                    color: white;
+                    font-family: $font-family2;
+                }
+                .pricing-card-title2{
+                    padding: 15px;
+                    font-size: 16px;
+                    font-family: $font-family2;
+                    font-weight: bold;
+                    display: flex;
+                    justify-content: center;
+                    color: white;
+                }
+                .pricing-line{
+                    
+                    width:100%;
+                    height: 1px;
+                    border-radius: 10px;
+                    background-color: white;
+                }
+                .pricing-card-date{
+                    padding: 10px;
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    color:white;
+                    font-size: 80px;
+                    font-weight: bold;
+                    font-family: $font-family2;
+                    .position-sum{
+                        position: absolute;
+                        top: 28px;
+                        left: 66px;
+                        font-size: 14px;
+                        color: white;
+                        font-family: $font-family2;
+                    }
+                    .position-date{
+                        position: absolute;
+                        bottom: 26px;
+                        right: 24px;
+                        font-size: 14px;
+                        color: white;
+                        font-family: $font-family2;
+                    }
+                }
+            }
+        }
+
+        .pricing-content{
+            padding: 20px;
+            font-size: 16px;
+            text-align: center;
+            align-items: center;
+            color: #ABAFC7;
+            font-family: $font-family2;
+            font-weight: bold;
+            .pricing-button{
+                background-color: #4a01d3;
+                &:hover{
+                    background-color: #FD346E;
+                    border: none;
+                }
+            }
+            
+        }
+        
+    }
+}
+
+.footer{
+    height: 30vh;
+    background-color: $body_color;
+    .footer-menu-title{
+        color: #192431;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: $font-family2;
     }
 }

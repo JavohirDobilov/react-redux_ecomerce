@@ -1,36 +1,56 @@
 
-    .logo{
-        img{
-            width: 120px;
-            
-        }
-    }
-    .custom-nav{
+    header{
+        
+        position: fixed;
         display: flex;
-        padding: 0;
-        margin: 0;
-            li{
-                display: flex;
-                a{
-                    padding: 5px 15px;
-                    display: inline-block;
-                    font-weight: 600;
-                    color: rgba($dark, 0.7);
-                    text-decoration: none;
-                    transition: 0.3s all ease;
-                    font-family: 'Quicksand';
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 16px;
-                    
-                    &:hover{
-                        color: $dark;
+        justify-content: space-between;
+        align-items: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 200000;
+        transition: .7s;
+
+        .logo{
+            img{
+                width: 100px;
+                
+            }
+        }
+        .custom-nav{
+            display: flex;
+            padding: 0;
+            margin: 0;
+                li{
+                    display: flex;
+                    a{
+                        padding: 5px 15px;
+                        display: inline-block;
+                        font-weight: 600;
+                        color:rgb(7, 7, 7);
+                        text-decoration: none;
+                        transition: 0.3s all ease;
+                        font-family: 'Quicksand';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        
+                        &:hover{
+                            color: $dark;
+                        }
                     }
                 }
-            }
-            
+                
+        }
+    }
+    header.sticky{
+        background-color: rgb(147, 112, 228);
+        padding: 8px 12px;
+        opacity: 0.9;
+    
     }
 
+    
 
 
 //mobie menu hamburger

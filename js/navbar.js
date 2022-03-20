@@ -1,3 +1,19 @@
+
+window.addEventListener("scroll", function(){
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+})
+
+
+
+
+
+
+
+
+
+
+
 var hamburger_menu = document.querySelector('.hamburger-menu');
 var custom = document.querySelector('.custom-navbar');
 var overlay = document.querySelector('.overlay');
