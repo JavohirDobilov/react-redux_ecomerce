@@ -35,6 +35,19 @@ body{
     padding: 0;
     
 }
+body::-webkit-scrollbar-track{ 
+    background:#f5f5f5; 
+} 
+
+body::-webkit-scrollbar{ 
+    width: 10px; 
+    padding: 0 1px; 
+    background-color: #e3e3e3; 
+} 
+body::-webkit-scrollbar-thumb{ 
+    background-color:#041da8; 
+    border-radius: 10px;
+}
 
 a{
     text-decoration: none;
@@ -59,6 +72,8 @@ li{
     font-size: 16px;
     font-weight: 600; 
     font-family: $font-family;
+   
+    
     &.btn-primary{
       border-color: $primary;
       color: $white;
@@ -81,4 +96,23 @@ li{
         box-shadow: -10px 30px 50px rgba(211, 1, 71, 0.302);
     }
 
+    
 }
+
+.container{
+    overflow: hidden;
+}
+
+
+
+@media only screen and (min-width:991px){
+    .overlay{
+        display: none;
+    }
+}
+
+
+
+
+
+

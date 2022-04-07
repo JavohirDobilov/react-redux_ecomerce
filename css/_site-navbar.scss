@@ -8,7 +8,7 @@
         top: 0;
         left: 0;
         right: 0;
-        z-index: 200000;
+        z-index: 10000;
         transition: .7s;
 
         .logo{
@@ -47,6 +47,7 @@
         background-color: rgb(147, 112, 228);
         padding: 8px 12px;
         opacity: 0.9;
+        
     
     }
 
@@ -103,33 +104,7 @@
 .custom-navbar.active .bar::after{
     transform: translateY(0) rotate(45deg);
 }
-@media only screen and (max-width:991px){
-    .overlay{
-        position: fixed;
-        width: 50%;
-        height: 100vh;
-        background-color: rgb(122, 190, 236);
-        padding-top: 20px;
-        transition: 0.5s;
-        transform: translateX(100%);
-        top:0;
-        right: 0;
-        z-index: 100;
-    }
-    .overlay.active{
-        right: 0;
-        transform: translateX(0%);
-    }
-    .overlay button{
-        margin-top: 100px;
-        margin-right: 50px;
-    }
-}
-@media only screen and (min-width:991px){
-    .overlay{
-        display: none;
-    }
-}
+
 
 
 
